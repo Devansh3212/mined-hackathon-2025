@@ -1,5 +1,5 @@
-
-# AI-Powered Research Paper Workbench
+# Mined-Hackathon-2025
+# Paper to X
 
 ## Project Overview
 This project provides an AI-powered workbench for generating alternative content from research papers. It allows users to upload a research paper (PDF) and automatically generates:
@@ -39,23 +39,16 @@ Ensure you have the following installed on your system:
 
 ### 1. Clone the Repository
 ```sh
-git clone https://github.com/yourusername/research-paper-workbench.git
-cd research-paper-workbench
+git clone https://github.com/Devansh3212/mined-hackathon-2025.git
+cd mined-hackathon-2025
 ```
 
-### 2. Create and Activate a Virtual Environment
-```sh
-python -m venv venv  # Create a virtual environment
-source venv/bin/activate  # On macOS/Linux
-venv\Scripts\activate  # On Windows
-```
-
-### 3. Install Dependencies
+### 2. Install Dependencies
 ```sh
 pip install -r requirements.txt
 ```
 
-### 4. Set Up API Keys
+### 3. Set Up API Keys
 Create a `.env` file in the root directory and add your API keys:
 ```ini
 ELEVENLABS_API_KEY=your-elevenlabs-api-key
@@ -63,46 +56,17 @@ HUGGINGFACE_API_TOKEN=your-huggingface-api-token
 ```
 Ensure you replace `your-elevenlabs-api-key` and `your-huggingface-api-token` with actual API keys.
 
-### 5. Run the Backend Server
+### 4. Run the Backend Server
 ```sh
 uvicorn main:app --host 0.0.0.0 --port 8080 --reload
 ```
 This will start the FastAPI backend.
 
-### 6. Run the Streamlit Frontend
+### 5. Run the Streamlit Frontend
 ```sh
 streamlit run app.py
 ```
 The application will be available at `http://localhost:8501/`.
-
----
-
-## API Endpoints
-
-### 1. Health Check
-```http
-GET /
-```
-Response:
-```json
-{"message": "FastAPI server is running!"}
-```
-
-### 2. Process Research Paper
-```http
-POST /process-paper/
-```
-#### Request Parameters
-- `file`: PDF file (uploaded)
-
-#### Response
-```json
-{
-  "summary": "Summarized text of the research paper",
-  "summary_pdf": "path/to/generated_summary.pdf",
-  "presentation": "path/to/generated_presentation.pptx"
-}
-```
 
 ---
 
