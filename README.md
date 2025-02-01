@@ -21,7 +21,7 @@ This tool enables researchers, students, and professionals to quickly understand
 - **Backend:** FastAPI
 - **Frontend:** Streamlit
 - **AI Models:** Llama2 (Ollama), ElevenLabs TTS
-- **PDF Processing:** PyMuPDF
+- **PDF Processing:** PyMuPDF, FPDF
 - **Presentation Generation:** python-pptx
 - **Logging:** Python logging module
 - **Deployment:** Uvicorn
