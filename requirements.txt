@@ -1,0 +1,12 @@
+fastapi
+uvicorn
+fitz  # PyMuPDF for PDF processing
+python-dotenv
+diffusers
+elevenlabs
+requests
+python-pptx
+huggingface_hub
+ollama
+fpdf
+streamlit
