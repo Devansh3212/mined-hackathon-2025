@@ -3,7 +3,7 @@ import streamlit as st
 import requests
 from pathlib import Path
 import tempfile
-import base64
+import base64 
 
 def get_download_link(file_path, link_text, mime_type):
     with open(file_path, 'rb') as f:
