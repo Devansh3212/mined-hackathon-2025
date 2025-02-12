@@ -79,7 +79,7 @@ The application will be available at `http://localhost:8501/`.
 ### 2. CUDA Errors
 - Ensure you have installed PyTorch with CUDA support if using a GPU.
 - Use CPU mode if necessary by modifying `pipe.to("cuda")` to `pipe.to("cpu")` in `main.py`.
-
+- Fallback to CPU in case of CUDA absence is present.
 ### 3. Missing Dependencies
 - Run `pip install -r requirements.txt` to install all dependencies.
 - Ensure you are inside the virtual environment when running the application.
