@@ -9,7 +9,7 @@ from pptx import Presentation
 import uvicorn
 from huggingface_hub import login
 import ollama
-import logging
+import logging 
 from fpdf import FPDF
 import torch
 from datetime import datetime
